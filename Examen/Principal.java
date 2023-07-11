@@ -15,6 +15,7 @@ public class Principal {
 		seguro.buscarPersonaDni(1242141);
 		seguro.buscarPoliza(1242);
 		seguro.Pagar();
+		seguro.buscarPersona(21421);
 	}
 
 }

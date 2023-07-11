@@ -17,7 +17,8 @@ public class Seguros {
 	}
 	
 	public Seguros() {
-		
+		System.out.println("Ingrese nombre del establecimiento");
+		this.nombre = sc.next();
 	}
 
 	public void agregarPoliza() {
@@ -67,7 +68,13 @@ public class Seguros {
 			}
 		}
 	}
-	
+	public void buscarPersona(int dni) {
+		for (int i=0;i<clientes.size();i++) {
+			if(clientes.get(i).getDNI()==dni) {
+				clientes.get(i).Mostrar();
+			}
+		}
+	}
 	public void mostrarClientes() {
 		for (int i=0;i<clientes.size();i++) {
 			clientes.get(i).Mostrar();
