@@ -59,7 +59,7 @@ public class Poliza {
 		}
 		System.out.println("Ingresa el monto total");
 		this.montoTotal = sc.nextInt();
-		System.out.println("Quieres incluir granizo? 1 2");
+		System.out.println("Quieres incluir granizo? 1) Si 2) No");
 		pag = sc.nextInt();
 		switch(pag) {
 		case 1: this.incluyeGranizo = true;
@@ -77,7 +77,7 @@ public class Poliza {
 			this.montoMaxGranizo = 0;
 		}
 		
-		System.out.println("Ingrese el tipo de cobertura 1 2 3 ");
+		System.out.println("Ingrese el tipo de cobertura 1) contra Terceros 2)Parcial 3)total ");
 		pag = sc.nextInt();
 		
 		switch(pag) {
